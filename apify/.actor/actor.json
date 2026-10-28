@@ -1,0 +1,15 @@
+{
+  "actorSpecification": 1,
+  "name": "east-africa-phone-paybill-normaliser",
+  "title": "East Africa Phone & M-PESA Paybill Normaliser (Kenya, Uganda, Tanzania)",
+  "description": "Clean and check Kenyan, Ugandan and Tanzanian phone numbers: E.164 format, valid or not, mobile or landline, and the operator the range is allocated to (Safaricom, Airtel, Telkom, MTN, Vodacom, Yas, Halotel...) from the official CA, UCC and TCRA numbering plans. Also format-checks M-PESA Paybill and Till numbers.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "minMemoryMbytes": 128,
+  "maxMemoryMbytes": 1024,
+  "defaultMemoryMbytes": 256,
+  "input": "./input_schema.json",
+  "storages": { "dataset": "./dataset_schema.json" },
+  "dockerfile": "./Dockerfile",
+  "readme": "../README.md"
+}

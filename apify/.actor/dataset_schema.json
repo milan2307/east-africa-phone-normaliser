@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "views": {
+    "overview": {
+      "title": "Results",
+      "transformation": { "fields": ["input", "valid", "country", "type", "e164", "national", "network", "network_operator", "region", "check", "reason"] },
+      "display": { "component": "table" }
+    }
+  }
+}

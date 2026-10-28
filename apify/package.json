@@ -1,0 +1,28 @@
+{
+  "name": "east-africa-phone-normaliser-actor",
+  "version": "0.1.0",
+  "description": "Apify Actor: normalise and classify Kenyan, Ugandan and Tanzanian phone numbers and M-PESA Paybill/Till numbers against the official numbering plans.",
+  "license": "MIT",
+  "author": "LamuLabs",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node dist/src/main.js",
+    "start:dev": "tsx src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "sync-core": "cp ../src/core/*.ts src/core/"
+  },
+  "dependencies": {
+    "apify": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}

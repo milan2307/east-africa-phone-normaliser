@@ -1,0 +1,11 @@
+{
+  "title": "East Africa phone & Paybill normaliser input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "numbers": { "title": "Numbers", "type": "array", "editor": "stringList", "description": "Phone, Paybill or Till numbers as people type them, e.g. 0712 345 678, +256 772 123456, 255754123456, 247247. Up to 100,000 per run." },
+    "defaultCountry": { "title": "Default country", "type": "string", "editor": "select", "enum": ["KE", "UG", "TZ"], "enumTitles": ["Kenya", "Uganda", "Tanzania"], "default": "KE", "description": "Used for numbers written without a country code." },
+    "kind": { "title": "What the numbers are", "type": "string", "editor": "select", "enum": ["auto", "phone", "paybill", "till"], "enumTitles": ["Detect", "Phone numbers", "M-PESA Paybill", "M-PESA Till"], "default": "auto", "description": "Paybill/Till are format-checked only (5-7 digits); there is no public registry to confirm them." }
+  },
+  "required": ["numbers"]
+}

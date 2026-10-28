@@ -1,0 +1,6 @@
+{
+  "_note": "PROPOSED pricing only. Not configured on Apify. Milan sets this in the Apify console after billing/payout setup.",
+  "events": {
+    "number-normalised": { "title": "Number normalised", "description": "One phone, Paybill or Till number cleaned and classified.", "priceUsd": 0.002 }
+  }
+}

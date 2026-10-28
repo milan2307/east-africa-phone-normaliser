@@ -1,0 +1,40 @@
+{
+  "name": "east-africa-phone-normaliser",
+  "version": "0.1.0",
+  "description": "Normalise and classify Kenyan, Ugandan and Tanzanian phone numbers and M-PESA Paybill/Till numbers against the official numbering plans. Pay per call over x402 (USDC on Base). MIT, LamuLabs.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/local-server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milan2307/east-africa-phone-normaliser.git"
+  },
+  "homepage": "https://github.com/milan2307/east-africa-phone-normaliser",
+  "dependencies": {
+    "@coinbase/cdp-sdk": "^1.60.0",
+    "@hono/node-server": "^2.1.5",
+    "@x402/core": "^2.28.0",
+    "@x402/evm": "^2.28.0",
+    "@x402/extensions": "^2.28.0",
+    "@x402/hono": "^2.28.0",
+    "@x402/svm": "^2.28.0",
+    "hono": "^4.13.14",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@x402/fetch": "^2.28.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "viem": "^2.57.12",
+    "vitest": "^5.0.5"
+  }
+}
